@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Finans - Visão Geral</title>
+  <title>Finans - Lançamentos</title>
 
   <!-- Custom fonts for this template-->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -63,7 +63,7 @@
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Movimentação Financeira</h6>
-            <a class="collapse-item" href="lancamentos.html">Inserir Lancamentos</a>
+            <a class="collapse-item" href="contas_a_pagar.html">Inserir Lancamentos</a>
             <a class="collapse-item" href="consulta_despesas.html">Consultar Lançamentos</a>
             <a class="collapse-item" href="cards.html">Inserir Caixas</a>
             <a class="collapse-item" href="cards.html">Consultar Caixas</a>
@@ -208,14 +208,79 @@
 
           <!-- Page Heading -->
           <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Visão Geral</h1>
+            <h1 class="h3 mb-0 text-gray-800"></h1>
             <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
           </div>
 
-          <!-- Content Row -->
-          <div class="row">
+          <!-- Content Row 
+          <div class="row"> -->
+              <div class="container">
+                  <div class="row">
+                    <div class="col mb-5">
+                      <h1 class="display-4">Novo Lançamento</h1>
+                    </div>
+                  </div>
+            
+                  <div class="row mb-2">
+                    <div class="col-md-2">
+                      <select class="form-control" id="ano">
+                        <option value="">Ano</option>
+                        <option value="2018">2018</option>
+                      </select>
+                    </div>
+            
+                    <div class="col-md-2">
+                      <select class="form-control" id="mes">
+                        <option value="">Mês</option>
+                        <option value="1">Janeiro</option>
+                        <option value="2">Fevereiro</option>
+                        <option value="3">Março</option>
+                        <option value="4">Abril</option>
+                        <option value="5">Maio</option>
+                        <option value="6">Junho</option>
+                        <option value="7">Julho</option>
+                        <option value="8">Agosto</option>
+                        <option value="9">Setembro</option>
+                        <option value="10">Outubro</option>
+                        <option value="11">Novembro</option>
+                        <option value="12">Dezembro</option>
+                      </select>
+                    </div>
+                    
+                    <div class="col-md-2">
+                      <input type="text" class="form-control" placeholder="Dia" id="dia" />
+                    </div>
+            
+                    <div class="col-md-6">
+                      <select class="form-control" id="tipo">
+                        <option>Tipo</option>
+                        <option value="1">Alimentação</option>
+                        <option value="2">Educação</option>
+                        <option value="3">Lazer</option>
+                        <option value="4">Saúde</option>
+                        <option value="5">Transporte</option>
+                      </select>
+                    </div>
+                  </div>
+            
+                  <div class="row">
+                    <div class="col-md-8">
+                      <input type="text" class="form-control" placeholder="Descrição" id="descricao" />
+                    </div>
+            
+                    <div class="col-md-2">
+                      <input type="text" class="form-control" placeholder="Valor" id="valor" />
+                    </div>
+            
+                    <div class="col-md-2 d-flex justify-content-end">
+                      <button type="button" class="btn btn-primary">
+                        <i class="fas fa-plus"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
 
-            <!-- Earnings (Monthly) Card Example -->
+            <!-- Earnings (Monthly) Card Example 
             <div class="col-xl-3 col-md-6 mb-4">
               <div class="card border-left-primary shadow h-100 py-2">
                 <div class="card-body">
@@ -232,7 +297,7 @@
               </div>
             </div>
 
-            <!-- Earnings (Monthly) Card Example -->
+            <!-- Earnings (Monthly) Card Example 
             <div class="col-xl-3 col-md-6 mb-4">
               <div class="card border-left-success shadow h-100 py-2">
                 <div class="card-body">
@@ -249,7 +314,7 @@
               </div>
             </div>
 
-            <!-- Earnings (Monthly) Card Example -->
+            <!-- Earnings (Monthly) Card Example 
             <div class="col-xl-3 col-md-6 mb-4">
               <div class="card border-left-info shadow h-100 py-2">
                 <div class="card-body">
@@ -275,7 +340,7 @@
               </div>
             </div>
 
-            <!-- Pending Requests Card Example -->
+            <!-- Pending Requests Card Example
             <div class="col-xl-3 col-md-6 mb-4">
               <div class="card border-left-warning shadow h-100 py-2">
                 <div class="card-body">
@@ -293,14 +358,14 @@
             </div>
           </div>
 
-          <!-- Content Row -->
+          <!-- Content Row 
 
           <div class="row">
 
-            <!-- Area Chart -->
+            <!-- Area Chart 
             <div class="col-xl-8 col-lg-7">
               <div class="card shadow mb-4">
-                <!-- Card Header - Dropdown -->
+                <!-- Card Header - Dropdown 
                 <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
                   <h6 class="m-0 font-weight-bold text-primary">Movimentação Anual</h6>
                   <div class="dropdown no-arrow">
@@ -316,7 +381,7 @@
                     </div>
                   </div>
                 </div>
-                <!-- Card Body -->
+                <!-- Card Body 
                 <div class="card-body">
                   <div class="chart-area">
                     <canvas id="myAreaChart"></canvas>
@@ -325,10 +390,10 @@
               </div>
             </div>
 
-            <!-- Pie Chart -->
+            <!-- Pie Chart 
             <div class="col-xl-4 col-lg-5">
               <div class="card shadow mb-4">
-                <!-- Card Header - Dropdown -->
+                <!-- Card Header - Dropdown 
                 <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
                   <h6 class="m-0 font-weight-bold text-primary">Grafico Pizza</h6>
                   <div class="dropdown no-arrow">
@@ -344,7 +409,7 @@
                     </div>
                   </div>
                 </div>
-                <!-- Card Body -->
+                <!-- Card Body 
                 <div class="card-body">
                   <div class="chart-pie pt-4 pb-2">
                     <canvas id="myPieChart"></canvas>
@@ -365,13 +430,13 @@
             </div>
           </div>
 
-          <!-- Content Row -->
+          <!-- Content Row 
           <div class="row">
 
-            <!-- Content Column -->
+            <!-- Content Column 
             <div class="col-lg-6 mb-4">
 
-              <!-- Project Card Example -->
+              <!-- Project Card Example 
               <div class="card shadow mb-4">
                 <div class="card-header py-3">
                   <h6 class="m-0 font-weight-bold text-primary">Etapas do Projeto</h6>
@@ -452,7 +517,7 @@
                 </div>
               </div> -->
 
-            </div>
+            </div> 
 
             <div class="col-lg-6 mb-4">
 
@@ -470,7 +535,7 @@
                 </div>
               </div>  -->
 
-              <!-- Approach -->
+              <!-- Approach 
               <div class="card shadow mb-4">
                 <div class="card-header py-3">
                   <h6 class="m-0 font-weight-bold text-primary">Bem vindo ao Finans!!</h6>
